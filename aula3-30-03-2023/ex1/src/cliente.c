@@ -1,4 +1,4 @@
-#include "cliente.h"
+#include "../header/cliente.h"
 
 struct{
   char nome[255];
@@ -11,15 +11,16 @@ struct{
 } cliente;
 
 void ClienteCadastrar(){
-  Cliente cliente;
+  Cliente *cliente;
 
   cliente->;
 
 }
 
-void ClienteAumentarSaldo(Cliente c, unsigned int valor){
-  c->saldo += valor;
-  return c;
+void ClienteAumentarSaldo(Cliente *c, unsigned int valor){
+  c->saldo += valor;;
 }
-void ClienteReduzirSaldo();
+void ClienteReduzirSaldo(){
+
+}
 void ClienteDestruir();
