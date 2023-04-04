@@ -5,7 +5,7 @@
 #define ID_DIA 0
 
 typedef struct{
-  unsigned int value[3]; // dd-mm-yyyy
+    unsigned int value[3]; // dd-mm-yyyy
 }tData;
 
 tData DataStringParaData(char *data);
@@ -15,5 +15,6 @@ int DataDiferencaAnos(tData d1, tData d2);
 char *DataNomeMes(tData d);
 int DataCompare(tData d1, tData d2);
 int DataEhBissexto(tData d);
+int AnoEhBissexto(int a);
 int DataQtdDiasMes(tData d);
 tData DataIncrementarDia(tData d);

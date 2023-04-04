@@ -15,7 +15,7 @@ Incrementar um dia em uma data
 #include "tData.h"
 
 int main(){
-  char entrada[256];
-  scanf("%s", entrada);
-  return 0;
+    char entrada[256];
+    scanf("%s", entrada);
+    return 0;
 }
