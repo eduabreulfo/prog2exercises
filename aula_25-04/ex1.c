@@ -1,3 +1,7 @@
+/*
+Exercício: modifique o programa anterior para que o valor de x seja alterando dentro da função
+*/
+
 #include <stdio.h>
 
 int modificaValor(int v){
