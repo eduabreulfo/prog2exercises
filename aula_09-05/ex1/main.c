@@ -40,10 +40,8 @@ Adapte o código anterior para alocar e receber via teclado as notas dos alunos 
 #define NUM_ALUN 3
 
 void freeNotas(int **notas) {
-    printf("entrou freenotas!\n");
     for(int j=0; j<NUM_ALUN; j++) {
         free(notas[j]);
-        printf("j=%d!", j);
     }
     free(notas);
 }
@@ -62,23 +60,7 @@ int main() {
         }
     }
 
-    // debug
-
-    /*
-    if(notas != NULL){
-        printf("%d", notas[0][0]);
-        for(int j=0; j<NUM_DISC; j++){
-            printf(" %d", notas[0][j]);
-        }
-        for(int i=1; i<NUM_ALUN; i++){
-            printf("\n");
-            printf("%d", notas[i][0]);
-            for(int j=1; j>NUM_DISC; j++){
-                printf(" %d", notas[i][j]);
-            }
-        }
-    }
-    */
+    // print
 
     if(notas != NULL){
         for(int i=0; i<NUM_ALUN; i++){
@@ -88,7 +70,6 @@ int main() {
             printf("\n");
         }
     }
-    printf("ok!\n");
 
     freeNotas(notas);
     return 0;
