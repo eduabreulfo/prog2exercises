@@ -20,7 +20,7 @@ VectorItem *vector_item_create(int *data)
     VectorItem *item = (VectorItem *)calloc(1, sizeof(VectorItem));
 
     item->data = (int *)calloc(1, sizeof(int));
-    item->data = data;
+    *item->data = *data;
 
     return item;
 }

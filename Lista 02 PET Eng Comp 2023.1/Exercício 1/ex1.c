@@ -12,7 +12,7 @@ int main(){
         vector_print(v); 
     } 
  
-    vector_remove(v, qntdNumeros - 1); 
+    vector_remove(v, qntdNumeros - 2); 
     vector_print(v); 
  
     vector_destroy(v); 

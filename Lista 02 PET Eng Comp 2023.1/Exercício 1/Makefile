@@ -11,4 +11,4 @@ run:
 	./$(TARGET)
 
 clean:
-	rm ex1.exe
+	rm $(TARGET)
