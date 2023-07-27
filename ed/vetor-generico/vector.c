@@ -8,7 +8,6 @@ struct Vector
     void **itens;
     unsigned capacidade;
     unsigned qtd;
-    char tipo;
 };
 
 Vector *vector_create()
@@ -34,11 +33,7 @@ void vector_add(Vector *v, void *item)
     v->qtd++;
 }
 
-/* Da pra essa funcao receber um ponteiro pra funcao pra variar o retorno?
- * Da pra tirar esse static tb (ou nao)
- * Eh complicado, dependendo do tipo dos itens do vetor, tem diferentes retornos e funcoes a serem usados com eles
- */
-static void *_vector_get(Vector *v, int idx)
+void *vector_get(Vector *v, int idx)
 {
     return v->itens[idx];
 }
