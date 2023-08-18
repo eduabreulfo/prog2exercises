@@ -1,9 +1,13 @@
 
 #include <stdio.h>
 #include "contato.h"
+#include "vector.h"
 
 int main()
 {
-    printf("Hello World!\n");
+    while(1)
+    {
+        ;
+    }
     return 0;
 }
