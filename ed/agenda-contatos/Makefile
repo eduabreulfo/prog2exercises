@@ -1,5 +1,5 @@
 
-TARGET = agendinha
+TARGET = main
 
 CFLAGS = -Wall
 

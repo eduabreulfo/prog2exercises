@@ -5,9 +5,10 @@
 
 int main()
 {
-    while(1)
-    {
-        ;
-    }
+    Vector *agenda = vector_create();
+
+    vector_destroy(agenda);
+
+    printf("Hello World!\n");
     return 0;
 }
