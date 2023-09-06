@@ -1,7 +1,0 @@
-
-#ifndef _CONSTANTES_H
-#define _CONSTANTES_H
-
-#define VECTOR_CAPACIDADE_INICIAL 8
-
-#endif
